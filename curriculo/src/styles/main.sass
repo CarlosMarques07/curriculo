@@ -1,0 +1,37 @@
+@use 'variables'
+    
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: variables.$font-family
+
+#loom-companion-mv3
+    display: none
+
+body
+    background-color: rgba(119,119,119,0.2)
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 100vh
+    padding: 1rem
+    @media (max-Width: 768px)
+        height: auto
+
+div
+    padding: 1rem
+
+h1
+    font-size: variables.$h1-size
+    line-height: variables.$h1-size*1.20
+
+p
+    font-size: variables.$p-size
+    line-height: variables.$p-size*1.50
+
+main
+    border-radius: 10px
+    max-width: 87.5rem
+    box-shadow: .25rem .25rem .25rem.25rem #222
+    background-color: #EFEFEF
