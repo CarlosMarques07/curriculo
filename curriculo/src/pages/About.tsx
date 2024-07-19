@@ -31,11 +31,12 @@ export const About: React.FC<AboutProps> = ({
     return(
         <>
            <main>
-                {windowWidth > 768 &&
+                {windowWidth > 1160 &&
                     <aside>
                         <NavMenu
                             activeScreen={activeScreen}
                             handleActiveScreen={handleActiveScreen}
+                            windowWidth={windowWidth}
                         />
                     </aside>
                 }
@@ -44,7 +45,7 @@ export const About: React.FC<AboutProps> = ({
                     <p>
                         Me chamo <b>Carlos Andrius Marques da Silva</b>, tenho {calculateAge('2001-08-07')} anos,
                             moro em Porto Alegre/RS, sou Técnico em TI e atualmente estou cursando Análise e
-                             Desenvolvimento de Sistemas. Embora tenha uma personalidade descontraída,
+                             Desenvolvimento de Sistemas na Unisinos. Embora tenha uma personalidade descontraída,
                               sou extremamente focado e dedicado aos meus afazeres. Meus hobbys consistem em praticar
                                atividades físicas, como academia e futebol, cozinhar, ler livros, além de pesquisar e estudar
                                 formas de aprimorar meus conhecimentos. Também aprecio jogar vídeo game, xadrez e socializar com amigos.</p>

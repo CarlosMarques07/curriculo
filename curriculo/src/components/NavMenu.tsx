@@ -1,16 +1,21 @@
 import React from 'react'
 import Photo from '../assets/img/carlos-marques.png'
+import Curriculo from '../assets/docs/Carlos Marques - Currículo.pdf'
 import '../styles/components/navMenu.sass'
 import { BsDownload, BsGithub, BsInstagram, BsWhatsapp } from 'react-icons/bs'
 
 interface NavMenuProps {
     activeScreen: string
-    handleActiveScreen: (value: string) => void
+    handleActiveScreen: (value: string) => void,
+    windowWidth: number
+    setOpenMenu?: (value: boolean) => void
 }
 
 export const NavMenu: React.FC<NavMenuProps> = ({
     activeScreen,
-    handleActiveScreen 
+    handleActiveScreen,
+    windowWidth,
+    setOpenMenu 
 }) => {
     return(
         <>
@@ -32,30 +37,41 @@ export const NavMenu: React.FC<NavMenuProps> = ({
                             </a>
                         </div>
                         <button className={activeScreen === 'About' ? 'active' : ''}
-                            onClick={(e) => {handleActiveScreen('About')}}
+                            onClick={(e) => {windowWidth > 768 
+                                ? handleActiveScreen('About')
+                                : handleActiveScreen('About'); setOpenMenu(false); 
+                            }}
                         >
                             Sobre
                         </button>
                         <button className={activeScreen === 'Skills' ? 'active' : ''}
-                            onClick={(e) => {handleActiveScreen('Skills')}}
+                            onClick={(e) => {windowWidth > 768 
+                                ? handleActiveScreen('Skills')
+                                : handleActiveScreen('Skills'); setOpenMenu(false); 
+                            }}
                         >
                             Habilidades
                         </button>
                         <button className={activeScreen === 'Experience' ? 'active' : ''}
-                            onClick={(e) => {handleActiveScreen('Experience')}}
+                            onClick={(e) => {windowWidth > 768 
+                                ? handleActiveScreen('Experience')
+                                : handleActiveScreen('Experience'); setOpenMenu(false); 
+                            }}
                         >
                             Experiência
                         </button>
                         <button className={activeScreen === 'Portfolio' ? 'active' : ''}
-                            onClick={(e) => {handleActiveScreen('Portfolio')}}
+                            onClick={(e) => {windowWidth > 768 
+                                ? handleActiveScreen('Portfolio')
+                                : handleActiveScreen('Portfolio'); setOpenMenu(false); 
+                            }}
                         >
                             Portfólio
                         </button>
-                        <button className="download"
-                        >
+                        <a className="download" href={Curriculo} download='Carlos Marques - Currículo.pdf'>
                             <BsDownload style={{strokeWidth: '1px'}}/>
                             Baixar PDF
-                        </button>
+                        </a>
                     </nav>
                     <p>Made with: ReactJS, Typescript and SASS</p>
                 </div>

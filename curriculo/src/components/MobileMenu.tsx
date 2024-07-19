@@ -6,14 +6,22 @@ import { IoMenu } from 'react-icons/io5'
 interface MobileMenuProps {
     activeScreen: string
     handleActiveScreen: (value: string) => void
+    windowWidth: number
+    
 }
 
 export const MobileMenu: React.FC<MobileMenuProps> = ({
     activeScreen,
-    handleActiveScreen
+    handleActiveScreen,
+    windowWidth,
 }) => {
 
     const [openMenu, setOpenMenu] = useState<boolean>(false)
+
+    const handleMenu = (value: boolean) => {
+        setOpenMenu(false)
+    }
+
     return(
         <>
             <div id='MobileNav'>
@@ -27,6 +35,8 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
                 <NavMenu 
                     activeScreen={activeScreen}
                     handleActiveScreen={handleActiveScreen}
+                    windowWidth={windowWidth}
+                    setOpenMenu={handleMenu}
                 />
             </div>
         </>

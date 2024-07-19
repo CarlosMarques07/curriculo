@@ -1,0 +1,48 @@
+@use '../variables'
+
+#CardPortfolio
+    padding: 0
+    scroll-behavior: smooth      
+
+    @media (min-width: 768px) 
+        overflow-y: auto
+
+    @media (max-width: 768px) 
+        margin-inline: auto
+    
+    .portfolioItem
+        gap: 0
+        padding: 0
+        border: 1px solid variables.$secondary-text-color
+        border-radius: 10px
+        overflow: hidden
+
+    .image
+        padding: 0
+        
+        img
+            max-height: 10rem
+            max-width: 100%
+
+    
+    .content
+        gap: 0
+        background-color: #FFF
+        
+
+    a
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: .25rem
+        width: 150px
+        align-self: center
+        font-size: variables.$p-size
+        color: variables.$primary-light-text-color
+        background-color: rgba(0,102,230,1)
+        border-radius: 10px
+        text-decoration: none
+        margin-top: 1rem
+
+        &:hover
+            background-color: rgba(0,102,200,1)

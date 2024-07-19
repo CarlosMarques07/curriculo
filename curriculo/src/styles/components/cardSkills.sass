@@ -1,35 +1,32 @@
 @use '../variables'
 
-#Carousel
+#CardSkills
     padding: 0
-    align-self: center
     scroll-behavior: smooth      
 
     @media (min-width: 768px) 
-        overflow-y: scroll
+        overflow-y: auto
 
     h1, h2 , h3, p
         color: variables.$primary-dark-text-color
 
-    .skill
-        padding: 0
-
-    #Items
+    .itemsSkill
         padding: 0
         flex-wrap: wrap
         flex-direction: row
 
         @media (max-width: 768px) 
             justify-content: center
-    .item
-        width: 8rem
-        height: 10rem
-        align-items: center
-        padding: .5rem
-        justify-content: space-between
-        border: 1px solid variables.$secondary-text-color
-        border-radius: 10px
-        text-align: center
+        
+        .item
+            width: 8rem
+            height: 10rem
+            align-items: center
+            padding: .5rem
+            justify-content: space-between
+            border: 1px solid variables.$secondary-text-color
+            border-radius: 10px
+            text-align: center
         
 
 .icons

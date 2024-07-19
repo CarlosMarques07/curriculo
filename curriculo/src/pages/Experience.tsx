@@ -1,10 +1,9 @@
-import React from "react";
-import { NavMenu } from "../components/NavMenu";
-import '../styles/pages/skills.sass'
-import { CardSkills } from "../components/CardSkills";
+import { CardExperience } from "../components/CardExperience"
+import { NavMenu } from "../components/NavMenu"
+import '../styles/pages/experience.sass'
 
 
-interface SkillsProps {
+interface ExperienceProps {
     activeScreen: string
     handleActiveScreen: (value: string) => void
     windowWidth: number
@@ -12,7 +11,7 @@ interface SkillsProps {
 
     
 
-export const Skills: React.FC<SkillsProps> = ({
+export const Experience: React.FC<ExperienceProps> = ({
     activeScreen,
     handleActiveScreen,
     windowWidth
@@ -29,9 +28,9 @@ export const Skills: React.FC<SkillsProps> = ({
                         />
                     </aside>
                 }
-                <div id="Skills">
-                    <h1>Habilidades</h1>
-                    <CardSkills />
+                <div id="Experience">
+                    <h1>Experiência</h1>
+                    <CardExperience />
                 </div>
             </main>
         </>

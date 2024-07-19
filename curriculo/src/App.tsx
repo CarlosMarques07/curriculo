@@ -3,6 +3,8 @@ import { About } from './pages/About'
 import { useWindowWidth } from './hooks/windowWidth'
 import { MobileMenu } from './components/MobileMenu'
 import { Skills } from './pages/Skills'
+import { Experience } from './pages/Experience'
+import { Portfolio } from './pages/Portfolio'
 
 function App() {
   
@@ -16,11 +18,12 @@ function App() {
 
   return (
     <>
-      {windowWidth <= 768 &&
+      {windowWidth <= 1160 &&
         <header>
           <MobileMenu
               activeScreen={activeScreen}
               handleActiveScreen={handleActiveScreen}
+              windowWidth={windowWidth}
           />
         </header>
       }
@@ -36,7 +39,17 @@ function App() {
             handleActiveScreen={handleActiveScreen}
             windowWidth={windowWidth}  
           />
-        : ''
+        : activeScreen === 'Experience'
+        ? <Experience
+            activeScreen={activeScreen}
+            handleActiveScreen={handleActiveScreen}
+            windowWidth={windowWidth}  
+          />
+        : <Portfolio 
+            activeScreen={activeScreen}
+            handleActiveScreen={handleActiveScreen}
+            windowWidth={windowWidth}
+          />
       }
     </>
   )

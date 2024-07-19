@@ -139,11 +139,11 @@ const cardValues: CardValues = [
 
 export const CardSkills = () => {
     return (
-        <div id="Carousel">
+        <div id="CardSkills">
             {cardValues.map((item, index) => (
-                <div key={index} className='skill'>
+                <div key={index} className='card'>
                     <h2>{item.title}</h2>
-                    <div id='Items'>
+                    <div className='itemsSkill'>
                         {item.skills.map((skill, skillIndex) => (
                             <div className="item" key={skillIndex}>
                                 {skill.icon}
@@ -154,6 +154,15 @@ export const CardSkills = () => {
                     </div>
                 </div>
             ))}
+            <h2>Outras Habilidades</h2>
+            <ul>
+                <li>Autodidata.</li>
+                <li>Gerenciamento de Recursos Humanos.</li>
+                <li>Inglês Básico.</li>
+                <li>Adaptabilidade.</li>
+                <li>Conhecimento de UI/UX.</li>
+                <li>Metodologia SCRUM.</li>
+            </ul>
         </div>
     );
 };

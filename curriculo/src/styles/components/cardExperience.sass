@@ -1,0 +1,25 @@
+@use '../variables'
+
+#CardExperience
+    padding: 0
+    align-self: center
+    scroll-behavior: smooth
+    gap: 1rem      
+
+    @media (min-width: 768px) 
+        overflow-y: auto
+
+    h1, h2 , h3, p
+        color: variables.$primary-dark-text-color
+        text-align: justify
+
+    .experienceItem
+        max-width: 744px
+        gap: 0
+        border: 1px solid variables.$secondary-text-color
+        border-radius: 10px
+    
+    .sinceEnd
+        padding: 0
+        flex-direction: row
+        gap: 1rem
