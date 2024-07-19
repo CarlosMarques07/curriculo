@@ -1,0 +1,85 @@
+@use '../variables'
+
+#Menu 
+    width: 20rem
+    display: flex
+    flex-direction: column
+    align-items: center
+    overflow: hidden
+    background-color: variables.$main-color
+    padding: 1rem
+    height: 100%
+    border: none
+    text-align: center
+    
+
+    
+
+    @media (max-width: 768px)
+        width: 18rem
+        height: calc( 100vh - 34px )
+        padding: 1rem
+    div
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        gap: .5rem
+
+        &#SocialLinks
+            flex-direction: row
+    h1
+        color: variables.$primary-light-text-color
+
+    h2
+        color: variables.$secondary-text-color
+        font-size: 1.5rem
+        text-align: center
+
+        @media (max-width: 768px)
+            font-size: 1.25rem
+    img
+        border-radius: 50%
+        height: 200px
+        width: 200px
+
+        @media (max-width: 768px)
+            max-Width: 768
+            height: 100px
+            width: 150px
+         
+
+    nav
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: .5rem
+
+        div
+            display: flex
+            flex-direction: row
+            gap: .5rem
+
+            a
+                display: flex
+                align-items: center
+                justify-content: center
+                width: auto
+                padding: .25rem
+                font-size: 1.5rem
+                color: variables.$primary-light-text-color
+                border-radius: 10px
+
+                &:hover
+                    color: variables.$main-color
+                    background-color: variables.$hover-color
+        
+    p
+        color: variables.$secondary-text-color
+        text-align: center
+        font-size: .75rem
+
+    .download
+        display: flex
+        justify-content: space-evenly
+        border: 1px solid variables.$primary-light-text-color

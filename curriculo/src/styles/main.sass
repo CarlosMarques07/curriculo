@@ -15,23 +15,105 @@ body
     align-items: center
     justify-content: center
     height: 100vh
-    padding: 1rem
+    letter-spacing: 1px
+    -webkit-font-smoothing: antialiased
     @media (max-Width: 768px)
         height: auto
+        justify-content: start
 
-div
-    padding: 1rem
+header
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: end
+    position: fixed
+    top: 0
+    z-index: 1000000
+
+main
+    display: flex
+    border-radius: 10px
+    max-width: 70rem
+    height: 50rem
+    box-shadow: .25rem .25rem .25rem.25rem #222
+    background-color: #EFEFEF
+    overflow: hidden
+
+
+    @media (max-width: 768px)
+        height: auto
+        padding: 1rem
+        margin: 66px 16px 16px 16px 
+
+    div
+        padding: 1rem
+        display: flex
+        flex-direction: column
+        gap: 1rem
 
 h1
-    font-size: variables.$h1-size
-    line-height: variables.$h1-size*1.20
+    font-size: variables.$h1-size-large
+    line-height: variables.$h1-size-large*1.20
 
+    @media (max-width: 768px)
+        font-size: variables.$h1-size-medium
+        line-height: variables.$h1-size-medium*1.20 
+    
+    @media (max-width: 500px)
+        font-size: variables.$h1-size-small
+        line-height: variables.$h1-size-small*1.20 
 p
     font-size: variables.$p-size
     line-height: variables.$p-size*1.50
 
-main
+
+button
+    padding: .5rem
     border-radius: 10px
-    max-width: 87.5rem
-    box-shadow: .25rem .25rem .25rem.25rem #222
-    background-color: #EFEFEF
+    border: none
+    color: variables.$primary-light-text-color
+    background-color: variables.$main-color
+    cursor: pointer
+    font-size: 1rem
+    font-weight: bold
+    width: 10rem
+
+    &:hover
+        color: variables.$primary-dark-text-color
+        background-color: variables.$hover-color
+
+.active
+    color: variables.$main-color
+    background-color: variables.$hover-color
+
+::-webkit-scrollbar 
+        width: .5rem
+        
+
+::-webkit-scrollbar-track 
+    background: variables.$primary-light-text-color
+
+
+::-webkit-scrollbar-thumb 
+    background: variables.$secondary-text-color
+    border-radius: 6px
+
+
+::-webkit-scrollbar-thumb:hover 
+    background: variables.$main-color
+
+scrollbar 
+        width: 5rem
+        
+
+scrollbar-track 
+    background: variables.$primary-light-text-color
+
+
+scrollbar-thumb 
+    background: variables.$secondary-text-color
+    border-radius: 6px
+
+
+scrollbar-thumb:hover 
+    background: variables.$main-color

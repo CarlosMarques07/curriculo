@@ -1,0 +1,32 @@
+@use '../variables'
+
+#MobileNav
+    padding: .5rem 1rem
+    display: flex
+    justify-content: end
+    width: 100%
+    background-color: variables.$main-color
+    z-index: 1000
+
+#toggle
+    padding: .25rem
+    border-radius: 10px
+    border: 1px solid variables.$primary-light-text-color
+    color: variables.$primary-light-text-color
+    background-color: variables.$main-color
+    font-size: 1.5rem
+    width: auto
+    display: flex
+    align-items: center
+    justify-content: center
+
+    &:focus
+        outline: none
+
+.slideIn
+    transform: translateY(-100%)
+    transition: transform 1s
+
+    &.open
+        transform: translateY(0)
+    
