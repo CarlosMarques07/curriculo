@@ -53,7 +53,7 @@ export const About: React.FC<AboutProps> = ({
                         atendimento ao cliente e gerenciamento de recursos humanos e logísticos. Além disso,
                          atuei como Tech Lead de Qualidade e Analista de Qualidade, onde fui responsável pela análise de requisitos, testes
                           de usabilidade controlados e não controlados, planejamento de projetos e documentação,
-                           e elaboração e melhorias em processos internos da empresa.</p>
+                            elaboração e melhorias em processos internos da empresa.</p>
                     <h1>Principais Características</h1>
                     <ul>
                         <li><b>Interesse em Aprender:</b> estou sempre disposto aprender algo novo, indiferente da área de conhecimento.</li>
