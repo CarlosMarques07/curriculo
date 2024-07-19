@@ -39,7 +39,7 @@ export const NavMenu: React.FC<NavMenuProps> = ({
                         <button className={activeScreen === 'About' ? 'active' : ''}
                             onClick={() => {windowWidth > 768 
                                 ? handleActiveScreen('About')
-                                : handleActiveScreen('About'); if (setOpenMenu) setOpenMenu(true);; 
+                                : handleActiveScreen('About'); if (setOpenMenu) setOpenMenu(false);; 
                             }}
                         >
                             Sobre
@@ -47,7 +47,7 @@ export const NavMenu: React.FC<NavMenuProps> = ({
                         <button className={activeScreen === 'Skills' ? 'active' : ''}
                             onClick={() => {windowWidth > 768 
                                 ? handleActiveScreen('Skills')
-                                : handleActiveScreen('Skills'); if (setOpenMenu) setOpenMenu(true);; 
+                                : handleActiveScreen('Skills'); if (setOpenMenu) setOpenMenu(false);; 
                             }}
                         >
                             Habilidades
@@ -55,7 +55,7 @@ export const NavMenu: React.FC<NavMenuProps> = ({
                         <button className={activeScreen === 'Experience' ? 'active' : ''}
                             onClick={() => {windowWidth > 768 
                                 ? handleActiveScreen('Experience')
-                                : handleActiveScreen('Experience'); if (setOpenMenu) setOpenMenu(true); 
+                                : handleActiveScreen('Experience'); if (setOpenMenu) setOpenMenu(false); 
                             }}
                         >
                             Experiência
@@ -63,7 +63,7 @@ export const NavMenu: React.FC<NavMenuProps> = ({
                         <button className={activeScreen === 'Portfolio' ? 'active' : ''}
                             onClick={() => {windowWidth > 768 
                                 ? handleActiveScreen('Portfolio')
-                                : handleActiveScreen('Portfolio'); if (setOpenMenu) setOpenMenu(true);; 
+                                : handleActiveScreen('Portfolio'); if (setOpenMenu) setOpenMenu(false);; 
                             }}
                         >
                             Portfólio
