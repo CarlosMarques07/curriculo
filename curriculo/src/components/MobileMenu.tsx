@@ -19,7 +19,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
     const [openMenu, setOpenMenu] = useState<boolean>(false)
 
     const handleMenu = (value: boolean) => {
-        setOpenMenu(false)
+        setOpenMenu(value)
     }
 
     return(

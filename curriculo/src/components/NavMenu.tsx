@@ -37,33 +37,33 @@ export const NavMenu: React.FC<NavMenuProps> = ({
                             </a>
                         </div>
                         <button className={activeScreen === 'About' ? 'active' : ''}
-                            onClick={(e) => {windowWidth > 768 
+                            onClick={() => {windowWidth > 768 
                                 ? handleActiveScreen('About')
-                                : handleActiveScreen('About'); setOpenMenu(false); 
+                                : handleActiveScreen('About'); if (setOpenMenu) setOpenMenu(true);; 
                             }}
                         >
                             Sobre
                         </button>
                         <button className={activeScreen === 'Skills' ? 'active' : ''}
-                            onClick={(e) => {windowWidth > 768 
+                            onClick={() => {windowWidth > 768 
                                 ? handleActiveScreen('Skills')
-                                : handleActiveScreen('Skills'); setOpenMenu(false); 
+                                : handleActiveScreen('Skills'); if (setOpenMenu) setOpenMenu(true);; 
                             }}
                         >
                             Habilidades
                         </button>
                         <button className={activeScreen === 'Experience' ? 'active' : ''}
-                            onClick={(e) => {windowWidth > 768 
+                            onClick={() => {windowWidth > 768 
                                 ? handleActiveScreen('Experience')
-                                : handleActiveScreen('Experience'); setOpenMenu(false); 
+                                : handleActiveScreen('Experience'); if (setOpenMenu) setOpenMenu(true); 
                             }}
                         >
                             Experiência
                         </button>
                         <button className={activeScreen === 'Portfolio' ? 'active' : ''}
-                            onClick={(e) => {windowWidth > 768 
+                            onClick={() => {windowWidth > 768 
                                 ? handleActiveScreen('Portfolio')
-                                : handleActiveScreen('Portfolio'); setOpenMenu(false); 
+                                : handleActiveScreen('Portfolio'); if (setOpenMenu) setOpenMenu(true);; 
                             }}
                         >
                             Portfólio
