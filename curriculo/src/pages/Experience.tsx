@@ -1,6 +1,5 @@
 import { CardExperience } from "../components/CardExperience"
 import { NavMenu } from "../components/NavMenu"
-import '../styles/pages/experience.sass'
 
 
 interface ExperienceProps {

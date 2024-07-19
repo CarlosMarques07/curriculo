@@ -1,6 +1,5 @@
 import { CardPortfolio } from "../components/CardPortfolio"
 import { NavMenu } from "../components/NavMenu"
-import '../styles/pages/portfolio.sass'
 
 interface PortfolioProps {
     activeScreen: string
