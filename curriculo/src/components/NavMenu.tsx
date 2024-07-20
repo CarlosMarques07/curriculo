@@ -2,8 +2,7 @@ import React from 'react'
 import Photo from '../assets/img/carlos-marques.png'
 import Curriculo from '../assets/docs/Carlos Marques - Currículo.pdf'
 import '../styles/components/navMenu.sass'
-import { BsDownload, BsGithub, BsInstagram, BsLinkedin, BsMailbox, BsWhatsapp } from 'react-icons/bs'
-import { IoMail } from 'react-icons/io5'
+import { BsDownload, BsGithub, BsInstagram, BsLinkedin, BsWhatsapp } from 'react-icons/bs'
 import { SiMaildotru } from 'react-icons/si'
 
 interface NavMenuProps {
