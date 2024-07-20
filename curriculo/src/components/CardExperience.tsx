@@ -20,7 +20,7 @@ const experiences: Experiences = [
         since: '04/2023',
         end: '07/2024',
         function: 'Analista e Líder Técnico de Qualidade',
-        attribuition: 'Gerenciamento de equipe, testes manuais, concepção de melhorias em sistemas e processos, análise de requisitos, elaboração de casos de uso, aplicação de testes controlados e não controlados, elaboração de documentação técnica e de uso de ferramentas, elaboração de testes ordenados e não ordenados, concepção de processos e ferramentas conforme necessidade do usuário, elaboração de protótipos junto ao Designer Gráfico, concepção de melhorias em UI/UX, aplicação de treinamentos.'
+        attribuition: 'Gerenciamento de equipe, testes manuais, concepção de melhorias em sistemas e processos, análise de requisitos, elaboração de casos de uso, aplicação de testes controlados e não controlados, elaboração de documentação técnica e de uso de ferramentas, elaboração de testes ordenados e não ordenados, concepção de processos e ferramentas conforme necessidade do usuário, elaboração de protótipos junto ao Designer Gráfico, concepção de melhorias em UX/UI, aplicação de treinamentos.'
     },
     {
         company: 'Cia. Zaffari Comércio e Indústria LTDA.',

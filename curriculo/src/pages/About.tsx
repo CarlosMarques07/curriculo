@@ -62,6 +62,11 @@ export const About: React.FC<AboutProps> = ({
                         <li><b>UX/UI e Clean Code:</b> Conhecimento amplo em design de experiência do usuário e práticas de código limpo.</li>
                         <li><b>Análise crítica:</b> sempre analisando cenários para tomadas de decisões mais eficientes e funcionais.</li>
                     </ul>
+                    <h1>Formação</h1>
+                    <ul>
+                        <li><b>Técnico de TI:</b>QI Faculdade & Escola Técnica (2019)</li>
+                        <li><b>Análise e Desenvolvimento de Sistemas: </b>Universidade do Vale do Rio dos Sinos - Porto Alegre (2º Semestre)</li>
+                    </ul>
                 </div>
            </main>
         </>

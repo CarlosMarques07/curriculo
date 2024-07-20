@@ -2,7 +2,9 @@ import React from 'react'
 import Photo from '../assets/img/carlos-marques.png'
 import Curriculo from '../assets/docs/Carlos Marques - Currículo.pdf'
 import '../styles/components/navMenu.sass'
-import { BsDownload, BsGithub, BsInstagram, BsWhatsapp } from 'react-icons/bs'
+import { BsDownload, BsGithub, BsInstagram, BsLinkedin, BsMailbox, BsWhatsapp } from 'react-icons/bs'
+import { IoMail } from 'react-icons/io5'
+import { SiMaildotru } from 'react-icons/si'
 
 interface NavMenuProps {
     activeScreen: string
@@ -34,6 +36,12 @@ export const NavMenu: React.FC<NavMenuProps> = ({
                             </a>
                             <a href="https://github.com/CarlosMarques07" target="_blank">
                                 <BsGithub />
+                            </a>
+                            <a href="https://www.linkedin.com/in/carlos-marques-038654175/" target='_blank'>
+                                <BsLinkedin />
+                            </a>
+                            <a href="mailto:carlosamarquess@gmail.com">
+                                <SiMaildotru />
                             </a>
                         </div>
                         <button className={activeScreen === 'About' ? 'active' : ''}
